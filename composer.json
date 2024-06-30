@@ -1,0 +1,10 @@
+{
+    "name": "meddeg/training",
+    "description": "training ricardo",
+    "autoload": {
+        "psr-4": {
+            "Meddeg\\Training\\": "src/"
+        }
+    },
+    "require": {}
+}
