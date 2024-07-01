@@ -1,15 +1,15 @@
 <?php
 
-namespace Grettings;
+namespace StringFormatter;
 
-class Greetings
+class StringFormatter
 {
-    public static function sayHello($text)
+    public static function format($text)
     {
-        return 'Hello ' . $text;
+        return $text .' ' .'Company';
     }
 
 
 }
 
-print_r(Greetings::sayHello('Feedier'));
+print_r(StringFormatter::format('Feedier'));
