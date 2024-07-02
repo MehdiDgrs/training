@@ -4,12 +4,21 @@ namespace StringFormatter;
 
 class StringFormatter
 {
-    public static function format($text)
+    private $text;
+    function __construct ($text) {
+        $this->text = $text;
+    }
+    private function format()
     {
-        return $text .' ' .'Company';
+        return $this->text .' ' .'Company';
     }
 
-
+    public function printFormatedText()
+    {
+        print_r($this->format());
+    }
 }
 
-print_r(StringFormatter::format('Feedier'));
+$stringFormatter = new StringFormatter('feedier');
+$stringFormatter->printFormatedText();
+
